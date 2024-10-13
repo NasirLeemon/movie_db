@@ -8,9 +8,7 @@ const NotFound = () => {
   const movieId = extractMovieId(pathname);
   return (
     <div className="h-[100vh]">
-      <h1 className="text-4xl">
-        This movie with " {movieId} " id was not found!
-      </h1>
+      <h1 className="text-4xl">This movie with {movieId} id was not found!</h1>
     </div>
   );
 };
