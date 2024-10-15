@@ -24,14 +24,14 @@ const Modal = ({ children }) => {
     >
       <span onClick={onHide} className="flex justify-end cursor-pointer">
         <Image
-          className="bg-white"
+          className="bg-white absolute"
           src="/xmark.svg"
           alt="close"
           width={30}
           height={30}
         />
       </span>
-      {children}
+      <div>{children}</div>
     </dialog>,
     document.getElementById("modal-root-content")
   );

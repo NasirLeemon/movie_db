@@ -17,15 +17,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={sora.className}>
         <div className="dark:bg-body bg-blaack dark:text-white text-dark">
-          <Header />
-
+          <div className="">
+            <Header />
+          </div>
           <main>
-            <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
-              <Sidebar />
-              {children}
+            <div className="container grid  gap-[3.5rem]">
+              <div className="hidden md:block md:fixed ">
+                <Sidebar />
+              </div>
+              <div className="" id="modal-root-content">
+                <div className="overflow-auto md:ml-[218px]">{children}</div>
+              </div>
             </div>
           </main>
-          <div id="modal-root-content"></div>
           <Footer />
         </div>
       </body>

@@ -1,9 +1,5 @@
-import MovieList from "../components/MovieList";
-import { getDictionary } from "./dictionaries";
+import MoviePage from "./movies/page";
 
-export default async function Home() {
-  const { getAllMovies } = await import("@/lib/data");
-  const movies = getAllMovies();
-
-  return <MovieList movies={movies} />;
+export default function Home() {
+  return <MoviePage />;
 }
