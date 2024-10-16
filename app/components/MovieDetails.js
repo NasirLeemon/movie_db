@@ -5,7 +5,7 @@ import React from "react";
 
 const MovieDetails = async ({ id }) => {
   const { getMovieById } = await import("@/lib/data");
-  console.log(id);
+
   const movie = await getMovieById(parseInt(id));
   if (!movie) {
     notFound();

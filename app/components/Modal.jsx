@@ -10,7 +10,6 @@ const Modal = ({ children }) => {
   useEffect(() => {
     if (!modalRef.current?.open) {
       modalRef.current?.showModal();
-      console.log("Modal Opened");
     }
   });
   const onHide = () => {
