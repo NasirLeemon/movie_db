@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>{metadata.title}</title> {/* Use the metadata for the title */}
+        <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
       <body className={sora.className}>
