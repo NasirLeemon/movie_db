@@ -6,7 +6,12 @@ const MoviePage = async () => {
   const { getAllMovies } = await import("@/lib/data");
   const movies = await getAllMovies();
 
-  return <MovieList movies={movies} />;
+  return (
+    <div>
+      <h1 className="text-5xl mb-5">All Movies</h1>
+      <MovieList movies={movies} />
+    </div>
+  );
 };
 
 export default MoviePage;
